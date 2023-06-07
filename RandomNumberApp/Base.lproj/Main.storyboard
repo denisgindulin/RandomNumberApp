@@ -130,6 +130,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="save"/>
+                                        <connections>
+                                            <segue destination="ySj-jE-38n" kind="unwind" unwindAction="unwindFor:" id="X6h-Mi-Gky"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWm-Hc-UKJ">
                                         <rect key="frame" x="0.0" y="61.000000000000028" width="96" height="53"/>
@@ -158,10 +161,11 @@
                     <navigationItem key="navigationItem" id="MUd-XO-vpb"/>
                     <connections>
                         <outlet property="maximumValueTextField" destination="bjZ-gg-fM0" id="CkZ-5D-7sC"/>
-                        <outlet property="minimumValueTexField" destination="8Cm-YX-W99" id="ksR-Wj-eJR"/>
+                        <outlet property="minimumValueTextField" destination="8Cm-YX-W99" id="ksR-Wj-eJR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WmT-Tj-K77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ySj-jE-38n" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1839.375" y="-3.1690140845070425"/>
         </scene>
