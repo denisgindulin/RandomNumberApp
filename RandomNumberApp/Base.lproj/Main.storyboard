@@ -20,25 +20,25 @@
                                 <rect key="frame" x="20" y="120" width="280" height="41"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVH-aR-vef">
-                                        <rect key="frame" x="0.0" y="0.0" width="45.5" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="41"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPv-2l-ys2">
-                                        <rect key="frame" x="56.5" y="0.0" width="89" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPv-2l-ys2">
+                                        <rect key="frame" x="78.5" y="0.0" width="35" height="41"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1U-fF-C0s">
-                                        <rect key="frame" x="156.5" y="0.0" width="19.5" height="41"/>
+                                        <rect key="frame" x="124.5" y="0.0" width="29" height="41"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv8-zg-2YY">
-                                        <rect key="frame" x="187" y="0.0" width="93" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv8-zg-2YY">
+                                        <rect key="frame" x="164.5" y="0.0" width="115.5" height="41"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -53,6 +53,9 @@
                                 <state key="normal" title="get result">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="getRandomNumberWhenButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wM-Me-PXz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh2-Lb-xxe">
                                 <rect key="frame" x="131" y="224.5" width="58" height="119.5"/>
@@ -74,6 +77,12 @@
                             <constraint firstItem="Zm5-dF-8Pa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pTe-PS-hmW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getRandomNumberButton" destination="Zm5-dF-8Pa" id="Cse-74-zug"/>
+                        <outlet property="maximumValueLabel" destination="zv8-zg-2YY" id="Ixa-hL-8fS"/>
+                        <outlet property="minimumValueLabel" destination="NPv-2l-ys2" id="3gi-iI-sHZ"/>
+                        <outlet property="randomValueLabel" destination="rh2-Lb-xxe" id="vR1-Au-Gdg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
