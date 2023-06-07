@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="915.34883720930236" y="-2.5751072961373391"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="uVl-av-nmS">
             <objects>
-                <viewController id="OWB-mW-cfm" sceneMemberID="viewController">
+                <viewController id="OWB-mW-cfm" customClass="SettingsViewController" customModule="RandomNumberApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSl-9d-2m4">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
