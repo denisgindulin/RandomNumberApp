@@ -138,6 +138,9 @@
                                         <state key="normal" title="cancel">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelButtonDidTapped" destination="OWB-mW-cfm" eventType="touchUpInside" id="pWV-bM-vS8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -153,6 +156,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MUd-XO-vpb"/>
+                    <connections>
+                        <outlet property="maximumValueTextField" destination="bjZ-gg-fM0" id="CkZ-5D-7sC"/>
+                        <outlet property="minimumValueTexField" destination="8Cm-YX-W99" id="ksR-Wj-eJR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WmT-Tj-K77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

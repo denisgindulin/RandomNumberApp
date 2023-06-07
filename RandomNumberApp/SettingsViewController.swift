@@ -9,8 +9,15 @@ import UIKit
 
 final class SettingsViewController: UIViewController {
 
+    @IBOutlet var minimumValueTexField: UITextField!
+    @IBOutlet var maximumValueTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    @IBAction func cancelButtonDidTapped() {
         
     }
 }
